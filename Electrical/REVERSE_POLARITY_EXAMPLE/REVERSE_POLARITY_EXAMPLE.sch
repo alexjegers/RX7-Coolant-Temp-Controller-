@@ -1,0 +1,107 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR?
+U 1 1 62EAB0AF
+P 3850 2450
+F 0 "#PWR?" H 3850 2300 50  0001 C CNN
+F 1 "+12V" H 3865 2623 50  0000 C CNN
+F 2 "" H 3850 2450 50  0001 C CNN
+F 3 "" H 3850 2450 50  0001 C CNN
+	1    3850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 62EAB425
+P 3550 2750
+F 0 "D?" V 3596 2670 50  0000 R CNN
+F 1 "D" V 3505 2670 50  0000 R CNN
+F 2 "" H 3550 2750 50  0001 C CNN
+F 3 "~" H 3550 2750 50  0001 C CNN
+	1    3550 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62EABBF2
+P 4150 2900
+F 0 "R1" H 4220 2900 50  0000 L CNN
+F 1 "High Current DC Fan Motor" H 4200 3150 50  0000 L CNN
+F 2 "" V 4080 2900 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 62EAC474
+P 3550 3150
+F 0 "R2" H 3620 3196 50  0000 L CNN
+F 1 "Analog Circuitry" H 2900 3400 50  0000 L CNN
+F 2 "" V 3480 3150 50  0001 C CNN
+F 3 "~" H 3550 3150 50  0001 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2450 3550 2450
+Wire Wire Line
+	3550 2450 3550 2600
+Wire Wire Line
+	3550 2900 3550 3000
+Connection ~ 3850 2450
+Wire Wire Line
+	3550 3450 3550 3300
+$Comp
+L power:GND #PWR?
+U 1 1 62EAD2E9
+P 3850 3450
+F 0 "#PWR?" H 3850 3200 50  0001 C CNN
+F 1 "GND" H 3855 3277 50  0000 C CNN
+F 2 "" H 3850 3450 50  0001 C CNN
+F 3 "" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 3450
+Wire Wire Line
+	3850 3450 3550 3450
+Wire Wire Line
+	4150 2450 4150 2750
+Wire Wire Line
+	3850 2450 4150 2450
+Wire Wire Line
+	4150 3050 4150 3450
+Wire Wire Line
+	3850 3450 4150 3450
+Wire Notes Line
+	3350 2950 3350 3350
+Wire Notes Line
+	3350 3350 3750 3350
+Wire Notes Line
+	3750 3350 3750 2950
+Wire Notes Line
+	3750 2950 3350 2950
+Wire Notes Line
+	3950 3100 4400 3100
+Wire Notes Line
+	4400 3100 4400 2700
+Wire Notes Line
+	4400 2700 3950 2700
+Wire Notes Line
+	3950 2700 3950 3100
+$EndSCHEMATC
